@@ -1,0 +1,19 @@
+<!doctype html>
+    <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Goedemorgen</title>
+    </head>
+    
+    <body>
+      <h1>Tijd met javaScript</h1>
+      <input type="button" value="click me" id="mijnbutton"/>
+      <script>
+        let datum = new Date();
+        let mijnbutton = document.getElementById("mijnbutton")
+        mijnbutton.addEventListener('click', ()=>{
+          window.alert("Hello World \nIk zit in klas SD1A \n" + datum);
+        })
+      </script>
+    </body>
+    </html>
