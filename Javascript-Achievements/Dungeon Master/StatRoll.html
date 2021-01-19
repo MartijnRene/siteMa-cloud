@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dungeon Master</title>
+    </head>
+    <body>
+        <h3 id= "Getal">0</h3>
+        <script>
+            function rollingForStats(){
+                let Getal1 = Math.floor((Math.random() * 6) + 1);
+                let Getal2 = Math.floor((Math.random() * 6) + 1);
+                let Getal3 = Math.floor((Math.random() * 6) + 1);
+                let Getal4 = Math.floor((Math.random() * 6) + 1);
+                let MinGetal = Math.min(Getal1, Getal2, Getal3,Getal4); 
+                let EindGetal = Getal1 + Getal2 + Getal3 + Getal4 - MinGetal;
+                console.log(Getal1, Getal2, Getal3, Getal4)
+                console.log("Nummer:" + EindGetal);
+                document.getElementById("Getal").textContent = EindGetal;
+            }
+        </script>
+        <input type="button" value="roll" onclick="rollingForStats()">
+    </body>
+</html>
