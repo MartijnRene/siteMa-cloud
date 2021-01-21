@@ -12,9 +12,80 @@ body {
     margin: 0 auto;
     background-image: url("afb/LetItBe.jpg");
     color: white;
+    padding-top: 153px;
+}
+
+#john{
+    margin-left: 117px;
+    padding-top: 402px;
+    padding-left: 271px;
+    padding-bottom: 10px;
+}
+
+#john .naam{
+    margin-left: 90px;
+}
+
+#paul{
+    margin-left: 604px;
+    margin-top: -470px;
+    padding-top: 402px;
+    padding-left: 268px;
+    padding-bottom: 10px;
+}
+
+#paul .naam{
+    margin-left: 60px;
+}
+
+#ring{
+    margin-left: 117px;
+    margin-top: 15px;
+    padding-top: 401px;
+    padding-left: 271px;
+    padding-bottom: 10px;
+}
+
+#ring .naam{
+    margin-left:110px;
+}
+
+#george{
+    margin-left: 604px;
+    margin-top: -470px;
+    padding-top: 402px;
+    padding-left: 268px;
+    padding-bottom: 10px;
+}
+
+#george .naam{
+    margin-left: 80px;
+}
+
+.beatle {
+    width: 200px;
+    cursor: pointer;
+}
+
+.beatle:hover{
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.beatle .naam{
+    opacity: 0;
+    text-shadow: 0 0 3px black;
+}
+
+.beatle:hover .naam{
+    opacity: 1;
 }
 
 h3, p {
     margin: 0;
     padding: 0;
+}
+
+.naam {
+    border-left: solid 9px red;
+    padding-left: 9px;
 }
