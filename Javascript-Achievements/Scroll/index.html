@@ -9,18 +9,16 @@
          <h1 id = "tekst" >Scroll on me</h1>
          <button id="reset">Reset</button>
         <script>
-            document.getElementById("tekst").addEventListener("wheel", ScrollWheel);
+            let txt = document.getElementById("tekst")
+            txt.addEventListener("wheel", ScrollWheel);
             document.getElementById("reset").addEventListener("click", ResetButton);
 
             function ScrollWheel(){ 
-                h1 = document.getElementById("tekst") ;
-                h1.addEventListener("wheel", ()=>{ h1.innerHTML += "!" });
+                txt.innerHTML += "!";
             }
 
             function ResetButton(){
-                textReset = document.getElementById("tekst")
-                resetButton = document.getElementById("reset")
-                resetButton.addEventListener("click", ()=>{ document.getElementById("tekst").textContent="Scroll on me" });
+                txt.innetHTML = "Scroll on Me";
             }
         </script>
     </body> 
